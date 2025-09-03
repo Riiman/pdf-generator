@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Appointment Letter</title>
+    <style>
+        @page { size: A4; margin: 15mm; }
+        body { font-family: "Segoe UI", Arial, sans-serif; color: #222; }
+        .header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; }
+        .logo { font-weight: 700; font-size: 20px; letter-spacing: 0.5px; }
+        .meta { font-size: 12px; color: #555; text-align: right; }
+        .title { font-size: 18px; margin: 20px 0; font-weight: 700; }
+        .content p { margin: 0 0 10px 0; line-height: 1.35; }
+        .signature { margin-top: 24px; }
+        .muted { color: #666; font-size: 12px; }
+    </style>
+    <!-- Place PNG/JPG logo file next to this template and reference relatively, e.g.:
+         <img src="logo.png" alt="logo" height="40" /> -->
+</head>
+<body>
+    <div class="header">
+        <div class="logo">{{ company_name }}</div>
+        <div class="meta">
+            <div>{{ company_address_line1 }}</div>
+            <div>{{ company_address_line2 }}</div>
+            <div>{{ company_phone }}</div>
+        </div>
+    </div>
+
+    <div class="title">Appointment Letter</div>
+
+    <div class="content">
+        <p>Date: {{ letter_date }}</p>
+        <p>To,</p>
+        <p>{{ full_name }}<br/>
+           {{ address_line1 }}<br/>
+           {{ address_line2 }}</p>
+
+        <p>Subject: Appointment for the position of {{ position_title }}</p>
+
+        <p>Dear {{ full_name }},</p>
+        <p>We are pleased to offer you the position of {{ position_title }} at {{ company_name }}. Your start date is {{ start_date }} and your employee ID is {{ employee_id }}.</p>
+        <p>Your annual compensation will be {{ compensation }}. Please review the terms and confirm your acceptance.</p>
+
+        <p class="signature">Sincerely,<br/>
+        {{ signer_name }}<br/>
+        {{ signer_title }}</p>
+    </div>
+
+    <p class="muted">Ref: {{ employee_id }} • {{ full_name }}</p>
+</body>
+</html>

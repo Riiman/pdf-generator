@@ -1,0 +1,3 @@
+company_name,company_address_line1,company_address_line2,company_phone,letter_date,full_name,address_line1,address_line2,position_title,start_date,employee_id,compensation,signer_name,signer_title,filename
+Acme Corp,123 Main Street,Suite 400,555-0100,2025-09-01,Alex Johnson,45 Maple Ave,Springfield,Software Engineer,2025-10-01,EMP-0001,$120,000,Pat Smith,HR Manager,EMP-0001_Alex_Johnson
+Acme Corp,123 Main Street,Suite 400,555-0100,2025-09-01,Skyler Lee,78 Oak St,Riverton,Data Analyst,2025-10-08,EMP-0002,$95,000,Pat Smith,HR Manager,EMP-0002_Skyler_Lee
